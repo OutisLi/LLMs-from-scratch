@@ -16,9 +16,11 @@ dependencies = [
     "pip>=25.0.1",
 ]
 
+# 使用 setuptools 自动发现项目中的 Python 包，无需手动列出
 [tool.setuptools.packages]
 find = {}
 
+# 声明该项目属于一个工作区（workspace），工作区内的多个子项目共享 uv.lock 锁文件和配置，依赖解析与安装统一管理
 [tool.uv.sources]
 llms-from-scratch = { workspace = true }
 
@@ -28,7 +30,7 @@ dev = [
 ]
 
 [tool.ruff]
-line-length = 140
+line-length = 150
 
 [tool.ruff.lint]
 exclude = [".venv"]

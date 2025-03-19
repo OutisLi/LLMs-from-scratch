@@ -28,6 +28,7 @@ To download a copy of this repository, click on the [Download ZIP](https://githu
 
 ```bash
 git clone --depth 1 https://github.com/rasbt/LLMs-from-scratch.git
+git remote add upstream https://github.com/rasbt/LLMs-from-scratch.git
 ```
 
 <br>
